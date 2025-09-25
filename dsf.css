@@ -1,0 +1,40 @@
+/* --- Styles pour les détails additionnels (Outils et Ressources) --- */
+.more-info {
+    margin-top: 1.5rem;
+    padding-top: 1rem;
+    border-top: 1px solid #e9ecef;
+}
+
+.more-info h4 {
+    color: #6c757d;
+    font-size: 1rem;
+    font-weight: bold;
+    margin-bottom: 0.5rem;
+}
+
+.more-info p {
+    font-size: 0.9em;
+    color: #495057;
+}
+
+.more-info ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+.more-info ul li {
+    margin-bottom: 0.25rem;
+}
+
+.more-info a {
+    color: #007bff;
+    text-decoration: none;
+    font-weight: 500;
+    font-size: 0.9em;
+    transition: text-decoration 0.2s ease-in-out;
+}
+
+.more-info a:hover {
+    text-decoration: underline;
+}

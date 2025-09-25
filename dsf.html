@@ -1,0 +1,174 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <title>Langages de structuration de contenus</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <header>
+        <h1>Langages de structuration de contenus</h1>
+        <h2>Documents structurés</h2>
+    </header>
+
+    <nav>
+        <ul>
+            <li><a href="#html">HTML</a></li>
+            <li><a href="#xml">XML</a></li>
+            <li><a href="#json">JSON</a></li>
+            <li><a href="#markdown">Markdown</a></li>
+            <li><a href="#latex">LaTeX</a></li>
+            <li><a href="#css">CSS</a></li>
+        </ul>
+    </nav>
+
+    <div class="container">
+        
+        <main class="main-content">
+            <section id="html">
+                <h2>HTML (HyperText Markup Language)</h2>
+                <p>HTML est le langage de balisage standard utilisé pour structurer et organiser le contenu d’une page Web. Il définit la hiérarchie des titres, des paragraphes, des images et des liens.</p>
+                <div class="details">
+                    <p><strong>Cas d’usage :</strong> Sites web, applications web monopages (SPAs), e-mails marketing, documents structurés pour des liseuses.</p>
+                </div>
+                <pre><code>&lt;!DOCTYPE html&gt;
+&lt;html&gt;
+  &lt;head&gt;&lt;title&gt;Exemple&lt;/title&gt;&lt;/head&gt;
+  &lt;body&gt;&lt;h1&gt;Bonjour, monde !&lt;/h1&gt;&lt;/body&gt;
+&lt;/html&gt;</code></pre>
+                <div class="more-info">
+                    <h4>Outils et Services</h4>
+                    <p><strong>Éditeurs :</strong> Visual Studio Code, Sublime Text, Atom. <br><strong>Frameworks (basés sur JS) :</strong> React, Angular, Vue.js. <br><strong>Validation :</strong> W3C Markup Validation Service.</p>
+                    <h4>Ressources</h4>
+                    <ul>
+                        <li><a href="https://developer.mozilla.org/fr/docs/Web/HTML" target="_blank">MDN Web Docs - HTML</a></li>
+                        <li><a href="https://html.spec.whatwg.org/" target="_blank">HTML Living Standard</a></li>
+                    </ul>
+                </div>
+            </section>
+
+            <section id="xml">
+                <h2>XML (eXtensible Markup Language)</h2>
+                <p>XML est un langage conçu pour stocker et transporter des données de manière lisible. Sa flexibilité lui permet de définir des formats de documents personnalisés.</p>
+                <div class="details">
+                    <p><strong>Cas d’usage :</strong> Flux RSS, sitemaps pour le SEO, formats de documents (DOCX, ODT), services web SOAP, configuration d'applications (ex: Android).</p>
+                </div>
+                <pre><code>&lt;note&gt;
+  &lt;to&gt;Alice&lt;/to&gt;
+  &lt;from&gt;Bob&lt;/from&gt;
+&lt;/note&gt;</code></pre>
+                <div class="more-info">
+                    <h4>Outils et Services</h4>
+                    <p><strong>Éditeurs spécialisés :</strong> Oxygen XML Editor, XMLSpy. <br><strong>Bibliothèques (Parsers) :</strong> lxml (Python), JAXB (Java), System.Xml (.NET).</p>
+                    <h4>Ressources</h4>
+                    <ul>
+                        <li><a href="https://www.w3.org/XML/" target="_blank">W3C XML Specification</a></li>
+                        <li><a href="https://developer.mozilla.org/fr/docs/Web/XML/XML_introduction" target="_blank">MDN Web Docs - XML</a></li>
+                    </ul>
+                </div>
+            </section>
+
+            <section id="json">
+                <h2>JSON (JavaScript Object Notation)</h2>
+                <p>JSON est un format léger d’échange de données. Facile à lire et à écrire pour les humains, il est aussi simple à analyser et à générer pour les machines.</p>
+                <div class="details">
+                    <p><strong>Cas d’usage :</strong> APIs RESTful, fichiers de configuration (npm, a.k.a `package.json`), communication entre client et serveur dans les applications web modernes.</p>
+                </div>
+                <pre><code>{
+  "nom": "Dupont",
+  "age": 30
+}</code></pre>
+                <div class="more-info">
+                    <h4>Outils et Services</h4>
+                    <p><strong>Validateurs en ligne :</strong> JSONLint. <br><strong>Outils en ligne de commande :</strong> jq. <br><strong>APIs populaires :</strong> GitHub API, Twitter API.</p>
+                    <h4>Ressources</h4>
+                    <ul>
+                        <li><a href="https://www.json.org/json-fr.html" target="_blank">JSON.org (spécification)</a></li>
+                        <li><a href="https://developer.mozilla.org/fr/docs/Web/JavaScript/Reference/Global_Objects/JSON" target="_blank">MDN Web Docs - JSON</a></li>
+                    </ul>
+                </div>
+            </section>
+
+            <section id="markdown">
+                <h2>Markdown</h2>
+                <p>Markdown est un langage de balisage léger qui permet de formater du texte via une syntaxe simple. Il est conçu pour être facilement convertible en HTML.</p>
+                <div class="details">
+                    <p><strong>Cas d’usage :</strong> Fichiers README sur GitHub/GitLab, documentation technique, générateurs de sites statiques (Jekyll, Hugo), applications de prise de notes (Obsidian).</p>
+                </div>
+                <pre><code># Titre
+**Texte en gras**
+[Lien](https://exemple.com)</code></pre>
+                <div class="more-info">
+                    <h4>Outils et Services</h4>
+                    <p><strong>Éditeurs :</strong> Typora, Obsidian, VS Code (avec prévisualisation). <br><strong>Convertisseurs :</strong> Pandoc, Marked.js. <br><strong>Plateformes :</strong> GitHub, Reddit, Discord.</p>
+                    <h4>Ressources</h4>
+                    <ul>
+                        <li><a href="https://daringfireball.net/projects/markdown/" target="_blank">Daring Fireball (créateur)</a></li>
+                        <li><a href="https://commonmark.org/" target="_blank">CommonMark (standardisation)</a></li>
+                    </ul>
+                </div>
+            </section>
+
+            <section id="latex">
+                <h2>LaTeX</h2>
+                <p>LaTeX est un système de composition de documents, idéal pour la production de documents techniques et scientifiques de haute qualité typographique.</p>
+                <div class="details">
+                    <p><strong>Cas d’usage :</strong> Articles de recherche, thèses universitaires, livres, présentations (via Beamer), CVs professionnels.</p>
+                </div>
+                <pre><code>\documentclass{article}
+\begin{document}
+$E = mc^2$
+\end{document}</code></pre>
+                <div class="more-info">
+                    <h4>Outils et Services</h4>
+                    <p><strong>Distributions :</strong> TeX Live, MiKTeX. <br><strong>Éditeurs en ligne :</strong> Overleaf, Papeeria. <br><strong>Gestion bibliographique :</strong> BibTeX, BibLaTeX.</p>
+                    <h4>Ressources</h4>
+                    <ul>
+                        <li><a href="https://www.latex-project.org/" target="_blank">The LaTeX Project</a></li>
+                        <li><a href="https://www.overleaf.com/learn" target="_blank">Overleaf Documentation</a></li>
+                    </ul>
+                </div>
+            </section>
+
+            <section id="css">
+                <h2>CSS (Cascading Style Sheets)</h2>
+                <p>CSS est le langage qui décrit l’apparence visuelle d’un document HTML. Il gère les couleurs, les polices, l'agencement, les animations et le design responsive.</p>
+                <div class="details">
+                    <p><strong>Cas d’usage :</strong> Design de sites web, thèmes pour CMS (WordPress), mise en forme de documents XML, création de styles pour l'impression.</p>
+                </div>
+                <pre><code>body {
+  font-family: Arial, sans-serif;
+  color: #333;
+}</code></pre>
+                <div class="more-info">
+                    <h4>Outils et Services</h4>
+                    <p><strong>Frameworks :</strong> Bootstrap, Tailwind CSS. <br><strong>Préprocesseurs :</strong> Sass, Less. <br><strong>Outils de développement :</strong> Firefox Developer Tools, Chrome DevTools.</p>
+                    <h4>Ressources</h4>
+                    <ul>
+                        <li><a href="https://developer.mozilla.org/fr/docs/Web/CSS" target="_blank">MDN Web Docs - CSS</a></li>
+                        <li><a href="https://css-tricks.com/" target="_blank">CSS-Tricks</a></li>
+                    </ul>
+                </div>
+            </section>
+        </main>
+
+        <aside class="sidebar">
+            <div class="about">
+                <h3>À propos</h3>
+                <p>Cette page présente plusieurs langages utiles pour créer et mettre en forme des contenus structurés.</p>
+                 <a href="https://www.w3schools.com/" target="_blank">
+                    <img src="images/3wscools.png" alt="Logo 3Wschools" class="logo">
+                </a>
+                <img src="images/w3schools-qrc.png" alt="QR Code d'accès au site w3schools" class="qrcode">
+            </div>
+        </aside>
+    </div>
+
+    <footer>
+        <p>Tous droits réservés &copy; N. E. 2025</p>
+    </footer>
+
+</body>
+</html>
